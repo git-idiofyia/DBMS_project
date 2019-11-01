@@ -1,0 +1,22 @@
+<% include ../views/partials/loggedInHeader %> 
+
+    <p>THIS IS THE QUESTION GALLERY SET BY <% problem.adminname %> </p>
+    <form action="/gallery" method="POST">
+        <div>
+            <h2><%= item.problem1 %></h2>
+            <input type="text" name="response1" placeholder="ANSWER">            
+        </div>
+        <div>
+                <h2>Q)<%= item.problem2 %></h2>
+                <input type="text" name="response2" placeholder="ANSWER">            
+        </div>
+        <div>
+                <h2>Q)<%= item.problem3 %></h2>
+                <input type="text" name="response3" placeholder="ANSWER">            
+        </div>
+        <button type="submit"></button>
+
+    </form>
+    <a href="/signout">SIGNOUT</a>
+
+<% include ../views/partials/footer %>

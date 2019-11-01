@@ -1,0 +1,19 @@
+
+#backgroundVideo{
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+.video-text{
+    position: absolute;
+    overflow: visible;
+    font-weight: 500;
+    left: 3vw;
+    text-align: left;
+    top: 25vh;  
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    z-index: 1;
+}

@@ -1,0 +1,26 @@
+<% include ../views/partials/header %>
+            <!--video background-->
+            <div class="video-container" >
+                <video autoplay muted loop id="backgroundVideo">
+                    <source src="https://player.vimeo.com/external/174002873.sd.mp4?s=ff78c7869c0807d1dffabb829263199af1be7b46&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                </video>
+                <div class="video-text">                    
+                    <p class="display-2">
+                        WELCOME TO
+                        <br>OUR<br><br><br><br>
+                        <span id="span">O N L I N E</span> 
+                        <br>
+                         COMPLAINT FORUM
+                    </p>           
+                </div>                               
+            </div>
+             
+        <script>
+            setInterval(function(){ 
+                $("#span").fadeIn(1000);               
+                $("#span").text("P O P U L A R").fadeIn(1000).delay(1000).fadeOut(1000);            
+                $("#span").text("S E C U R E").fadeIn(1000).delay(1000).fadeOut(1000);
+            },3000);
+        </script>
+
+<% include ../views/partials/footer %>

@@ -1,0 +1,41 @@
+<% include ../../views/partials/loggedInAdminHeader %>
+
+<h2>SET YOUR PROBLEMS BELOW!!</h2>
+<form action="/admin/setproblem" method="POST">
+    <div>
+            <input type="text" name="name" placeholder="NAME">
+    </div>
+    <div id="problem1">
+        <input type="text" name="problem1" placeholder="PROBLEM">
+        <!-- <div id="options1">
+                <input type="text" name="option11" placeholder="OPTION">
+                <input type="text" name="option21" placeholder="OPTION">
+                <input type="text" name="option31" placeholder="OPTION">
+                <input type="text" name="option41" placeholder="OPTION">
+        </div> -->
+    </div>
+     <br>   
+    <div id="problem2">
+            <input type="text" name="problem2" placeholder="PROBLEM">
+           <!-- <div id="options2">
+                    <input type="text" name="option12" placeholder="OPTION">
+                    <input type="text" name="option22" placeholder="OPTION">
+                    <input type="text" name="option32" placeholder="OPTION">
+                    <input type="text" name="option42" placeholder="OPTION">
+            </div> -->
+    </div>
+    <br>
+    <div id="problem3">
+          <input type="text" name="problem3" placeholder="PROBLEM">
+         <!--  <div id="options1">
+                       <input type="text" name="option13" placeholder="OPTION">
+                        <input type="text" name="option23" placeholder="OPTION">
+                        <input type="text" name="option33" placeholder="OPTION">
+                        <input type="text" name="option43" placeholder="OPTION">
+            </div> -->
+     </div>
+     <button type="submit">SUBMIT</button>
+
+</form>
+
+<% include ../../views/partials/footer %>
